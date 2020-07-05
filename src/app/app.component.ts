@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  sitename = 'Hello World';
+  keyword = 'TEST';
+  doSearch(str: string): void {
+    this.keyword = str;
+  }
 }
